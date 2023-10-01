@@ -1,0 +1,204 @@
+header {
+    /* background-color: black; */
+}
+.container {
+    margin: 0 auto;
+    width: 1107px;
+}
+.HeaderRow {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.HeaderLogo {
+    z-index: 1;
+    margin-top: 10px;
+    
+}
+
+.Rating {
+    z-index: 1;
+    display: flex;
+}
+
+.HeaderFlag {
+
+    width: 46.5px;
+    height: 75px;
+}
+
+.ratingBlock {
+    margin-top: 33px;
+    margin-left: 11.5px;
+}
+
+.ratingBlock>p {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+}
+
+.ratingBlock>p>span {
+    font-weight: 600;
+}
+
+.ButtonMail {
+    margin-top: 28px;
+}
+
+.ButtonMail>button {
+    display: block;
+    border-radius: 4px;
+    background: #84B73D;
+    position: relative;
+}
+
+.ButtonMail>button>p {
+    padding: 16px 52px 16px 27px;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 12.004px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 12.681px;
+}
+
+.ButtonMail>button>img {
+    position: absolute;
+    top: 13px;
+    left: 195px;
+}
+
+.Email {
+    margin-top: 13px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Email>img {
+    margin-right: 10px;
+}
+
+.Email>a {
+    color: #96989F;
+    font-family: Gilroy;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 11.504px;
+    /* 104.585% */
+    text-decoration-line: underline;
+}
+
+.Online {
+    z-index: 1;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Online>p>img {
+    margin-right: 7px;
+}
+
+.Online>p {
+    display: flex;
+    color: #D2D3D6;
+    font-family: Gilroy;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10.495px;
+    /* 104.952% */
+}
+
+.Online>img {
+    margin-top: 3px;
+    width: 38px;
+}
+
+.Contacts>p {
+    display: flex;
+    color: #D2D3D6;
+    font-family: Gilroy;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10.495px;
+    /* 104.952% */
+}
+
+.Contacts {
+    z-index: 1;
+    margin-top: 26px;
+}
+.Contacts>p>img {
+    margin-right: 7px;
+}
+
+.Contacts>a{
+    margin-top: 5px;
+    display: block;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17.791px; /* 111.195% */
+}
+
+.Contacts>a:last-child {color: #87BF3C;
+    font-family: Gilroy;
+    font-size: 12.273px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13.32px; 
+    text-decoration: underline dashed;
+    text-underline-offset: 2px;
+}
+
+.HeaderRow2 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 26px;
+    z-index: 1;
+}
+
+/* .Link:hover {
+    border-radius: 14.5px;
+    border: 1px solid #E1A43B;
+} */
+.Link{
+    border-radius: 14.5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 6px 12px 4px 11px;
+    display: flex;
+    align-items: center;
+}
+.Link:hover{
+    border: 1px solid #E1A43B;
+}
+.Link > a {
+    z-index: 1;
+    color: #FBFFFF;
+font-family: Gilroy;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.LinkImage{
+    margin-left: 9px;
+}
+
+.ImageIcon {
+    margin-right: 10px;
+}
