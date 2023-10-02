@@ -2,9 +2,9 @@ import React from 'react'
 
 import './BackgraundBanner.css'
 
-const BackgraundBanner = () => {
+const BackgraundBanner = ({darkTheme}) => {
   return (
-    <div className='BackgraundBanner'></div>
+    <div style={{background: darkTheme ? 'black' : ''}} className='BackgraundBanner'></div>
     )
 }
 

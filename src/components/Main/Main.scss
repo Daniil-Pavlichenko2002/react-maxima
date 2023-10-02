@@ -1,5 +1,5 @@
-.main {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+main {
+    position: relative;
+    display: block;
+    z-index: 2;
 }

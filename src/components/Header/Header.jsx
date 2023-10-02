@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../images/Header/Logo.svg'
 import stars from '../../images/Header/Stars.svg'
 import flag from '../../images/Header/Flag.svg'
@@ -13,9 +13,10 @@ import './Header.css'
 import BackgraundBanner from '../BackgraundBanner/BackgraundBanner'
 
 const Header = () => {
+  const [darkTheme, setDarkTheme] = useState(false)
   return (
     <header>
-      <BackgraundBanner/>
+      <BackgraundBanner darkTheme={darkTheme}/>
       <div className="container">
       <div className="HeaderRow">
         <img src={logo} alt="Логотип" className="HeaderLogo" />
@@ -46,6 +47,11 @@ const Header = () => {
           <a href="tel:+78000000000">+7 (800) 000-00-00</a>
           <a href="#">Заказать обратный звонок</a>
         </div>
+        <button 
+        onClick={() => setDarkTheme(!darkTheme)}
+        className='thme'>
+          {darkTheme ? 'Тёмная тема' : 'Обычная'}
+        </button>
       </div>
       <nav className="HeaderRow2">
         <div className="Link">
