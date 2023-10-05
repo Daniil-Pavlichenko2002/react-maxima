@@ -2,7 +2,10 @@ import React from 'react'
 import './Main.scss'
 import Banner from '../Banner/Banner'
 import Block2 from '../Block2/Block2'
-import Counter from '../Counter'
+import Gallery from '../Gallery/Gallery'
+import Slider from '../Slider/Slider'
+import API from '../API'
+
 
 
 const Main = () => {
@@ -11,7 +14,9 @@ const Main = () => {
       <div className='container'>
         <Banner/>
         <Block2/>
-        <Counter/>
+        <Gallery/>
+        <Slider/>
+        <API/>
       </div>
     </main>
   )
