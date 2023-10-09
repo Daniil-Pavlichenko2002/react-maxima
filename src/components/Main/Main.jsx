@@ -16,7 +16,6 @@ const Main = () => {
         <Block2/>
         <Gallery/>
         <Slider/>
-        <API/>
       </div>
     </main>
   )

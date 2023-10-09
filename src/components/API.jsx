@@ -10,6 +10,7 @@ const API = () => {
     const fetching = async () => {
         try {
             setLoading(true)
+            console.log(loading);
             await axios('https://jsonplaceholder.typicode.com/users')
                 .then(res => setUsers(res.data))   
         } catch (error) {
@@ -19,7 +20,6 @@ const API = () => {
         }     
             
     }
-
     useEffect(() => {
         fetching()
     }, [])
