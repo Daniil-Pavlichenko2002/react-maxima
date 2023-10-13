@@ -1,7 +1,7 @@
 import React from 'react'
 import './Block2.scss'
-import house from '../../images/Main/House.png'
-import bath from '../../images/Main/Bath.png'
+// import house from '../../images/Main/House.png'
+// import bath from '../../images/Main/Bath.png'
 import check from '../../images/Main/ГалочкаАктивная.svg'
 import checkNoActive from '../../images/Main/ГалочкаНеАктивная.svg'
 import InternaSlider from '../../images/Main/InternaSlider.svg'
@@ -13,28 +13,45 @@ import lock from '../../images/Main/Lock.svg'
 import lock2 from '../../images/Main/Group 11.svg'
 import percent from '../../images/Main/Percent.svg'
 
-const Block2 = () => {
-    return (
+
+
+
+const Block2 = ({slide, setIndex, index}) => {
+
+    const plusSlide = () => {
+        if (index !== slide.length - 1) {
+            setIndex(index + 1)
+        }
+    }
+    const minusSlide = () => {
+        if (index > 0) {
+            setIndex(index - 1)
+        }
+    }
+
+    const indentation = Math.round(index / (slide.length - 1) * 100);    
+    console.log(indentation)
+    return (    
         <section className='block2' >
             <div className="blockRow">
                 <div className="blockRowItem">
                     <h2><span>Рассчитайте предварительную <br />
                         стоимость</span> дома за 1 минуту</h2>
                     <div className="slider">
-                        <img src={InternaSlider} alt="" />
+                        <img style={{left: `${indentation}%`}} className='clider__icon' src={InternaSlider} alt="" />
                     </div>
                     <div className="block2Title">
-                        <div className='block2TitleNum' >01.</div>
-                        <h3>Что будем строить?</h3>
+                        <div className='block2TitleNum' >0{index + 1}.</div>
+                        <h3>{slide[index].title}</h3>
                     </div>
                     <div className="blockFlex">
                         <div className="blockFlexItem">
-                            <img className="blockFlexItemImage" src={house} alt="" />
+                            <img className="blockFlexItemImage" src={slide[index].image[0]} alt="" />
                             <img className='checkActive' src={check} alt="" />
                             <p>Дом</p>
                         </div>
                         <div className="blockFlexItem">
-                            <img className="blockFlexItemImage" src={bath} alt="" />
+                            <img className="blockFlexItemImage" src={slide[index].image[1]} alt="" />
                             <img className='checkActive' src={checkNoActive} alt="" />
                             <p>Баня</p>
                         </div>
@@ -45,7 +62,10 @@ const Block2 = () => {
                             <p><span>Нажимайте на вариант ответа</span><br />
                                 и переходите к следующему вопросу</p>
                         </div>
-                        <button>
+                        {index > 0 && <button onClick={minusSlide}>
+                            <p>Назад</p>
+                        </button>}
+                        <button onClick={plusSlide}>
                             <p>Далее</p>
                             <img src={arrow} alt="" />
                             <img src={arrow} alt="" />

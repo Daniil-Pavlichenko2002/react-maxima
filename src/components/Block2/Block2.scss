@@ -34,6 +34,10 @@
             border-radius: 6.109px;
             background: #EFF3F7;
             margin-top: 40px;
+            position: relative;
+            .clider__icon {
+                position: absolute;
+            }
         }
 
         .block2Title {
