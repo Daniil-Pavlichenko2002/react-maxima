@@ -6,11 +6,9 @@ import buttopnImage from '../../images/Header/Button-image.svg'
 import mail from '../../images/Header/mail.svg'
 import elipse from '../../images/Header/Ellipse 3.svg'
 import phoneLogo from '../../images/Header/PhoneLogo.svg'
-import vector from '../../images/Header/Vector 1.svg'
-import heart from '../../images/Header/Heart.svg'
-import search from '../../images/Header/Search.svg'
 import './Header.css'
 import BackgraundBanner from '../BackgraundBanner/BackgraundBanner'
+import Navigation from '../Navigation/Navigation'
 
 const Header = () => {
   const [darkTheme, setDarkTheme] = useState(false)
@@ -53,38 +51,7 @@ const Header = () => {
           {darkTheme ? 'Тёмная тема' : 'Обычная'}
         </button>
       </div>
-      <nav className="HeaderRow2">
-        <div className="Link">
-          <a href="">проекты</a>
-          <img className='LinkImage' src={vector} alt="" />
-        </div>
-        <div className="Link">
-          <a href="">фото работ</a>
-        </div>
-        <div className="Link">
-          <a href="">акции</a>
-        </div>
-        <div className="Link">
-          <a href="">услуги</a>
-          <img className='LinkImage' src={vector} alt="" />
-        </div>
-        <div className="Link">
-          <a href="">заказчику</a>
-          <img className='LinkImage' src={vector} alt="" />
-        </div>
-        <div className="Link">
-          <a href="">контакты</a>
-          <img className='LinkImage' src={vector} alt="" />
-        </div>
-        <div className="Link">
-          <img src={heart} className='ImageIcon' alt="" />
-          <a href="">избранное</a>
-        </div>
-        <div className="Link">
-          <img className='ImageIcon' src={search} alt="" />
-          <a href="">поиск</a>
-        </div>
-      </nav>
+      <Navigation/>
       </div>
    
     </header>

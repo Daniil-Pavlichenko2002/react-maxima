@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Block2.scss'
-// import house from '../../images/Main/House.png'
-// import bath from '../../images/Main/Bath.png'
+import house from '../../images/Main/House.png'
+import bath from '../../images/Main/Bath.png'
+import image from '../../images/Main/gallery/Rectangle 45.png'
 import check from '../../images/Main/ГалочкаАктивная.svg'
 import checkNoActive from '../../images/Main/ГалочкаНеАктивная.svg'
 import InternaSlider from '../../images/Main/InternaSlider.svg'
@@ -13,10 +14,32 @@ import lock from '../../images/Main/Lock.svg'
 import lock2 from '../../images/Main/Group 11.svg'
 import percent from '../../images/Main/Percent.svg'
 
+const slide = [
+    {
+        title: 'Что будем строить?',
+        image: [house, bath],
+    },
+    {
+        title: 'Второй слайд',
+        image: [house, image],
+    },
+    {
+        title: 'Третий слайд',
+        image: [image, bath],
+    },
+    {
+        title: 'Четвёртый слайд',
+        image: [house, bath],
+    },
+    {
+        title: 'Пятый слайд',
+        image: [bath, house],
+    },
+  ]
 
+const Block2 = () => {
 
-
-const Block2 = ({slide, setIndex, index}) => {
+    const [index, setIndex] = useState(0)
 
     const plusSlide = () => {
         if (index !== slide.length - 1) {

@@ -5,6 +5,7 @@ import image2 from '../../images/Main/image 7.png'
 import discount from '../../images/Main/Discount.svg'
 import vector from '../../images/Main/Vector 57.svg'
 import group from '../../images/Main/Group 40.svg'
+// import image from '../../images/Main/gallery/Rectangle 45.png'
 
 
 const Slider = () => {
