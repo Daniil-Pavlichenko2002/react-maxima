@@ -4,6 +4,7 @@ import Paintbrush from '../../images/Main/Paintbrush.svg'
 import CheckMark from '../../images/Main/CheckMark.svg'
 import Paper from '../../images/Main/Paper.svg'
 import './Banner.scss'
+import { Link } from 'react-router-dom'
 
 const Banner = () => {
   return (
@@ -13,7 +14,7 @@ const Banner = () => {
             под ключ в Курске</h1>
           <h2>Построим теплый и надежный дом <br/>
             <span> с гарантией 10 лет</span></h2>
-          <button>рассчитать стоимость</button>
+          <Link to='/calculator'><button>рассчитать стоимость</button></Link>
           <div className="bannerRow">
             <div className="bannerRowItem">
               <img src={img} alt="" />

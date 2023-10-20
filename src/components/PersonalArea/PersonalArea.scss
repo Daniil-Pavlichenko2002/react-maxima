@@ -1,0 +1,34 @@
+.personal__area {
+    width: 100%; 
+    margin: 100px auto 0 auto; 
+    min-height: 400px; 
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 89.51613px 0px #CACACA;
+    padding: 40px 100px;
+    background: #FFF;
+    h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+    .personal__area-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        margin-top: 15px;
+        font-size: 18px;
+        padding: 10px 80px;
+        border  : 1px solid #84B73D;
+        button {
+            background-color: #84B73D;
+            padding: 5px;
+            border-radius: 3px;
+            color: #FFF;
+        }
+    }
+    h2 {
+        margin-top: 100px;
+        font-size: 22px;
+        text-align: center;
+    }
+}

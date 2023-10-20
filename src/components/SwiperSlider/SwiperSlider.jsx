@@ -45,7 +45,7 @@ export default function SwiperSlider() {
                   проектировщиками и фронтендерами,<br />
                   когда нужно выстро заполнить макеты<br />
                   или прототипы содержимым.</p>
-                <button>перейти к акции</button>
+                {/* <button>перейти к акции</button> */}
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -56,7 +56,7 @@ export default function SwiperSlider() {
                   проектировщиками и фронтендерами,<br />
                   когда нужно выстро заполнить макеты<br />
                   или прототипы содержимым.</p>
-                <button>перейти к акции</button>
+                {/* <button>перейти к акции</button> */}
                 <img className='slider__item-discount' src={discount} alt="" />
               </div>
             </SwiperSlide>
@@ -68,11 +68,70 @@ export default function SwiperSlider() {
                   проектировщиками и фронтендерами,<br />
                   когда нужно выстро заполнить макеты<br />
                   или прототипы содержимым.</p>
-                <button>перейти к акции</button>
+                {/* <button>перейти к акции</button> */}
                 <img className='slider__item-discount' src={discount} alt="" />
               </div>
             </SwiperSlide>
-
+            <SwiperSlide>
+              <div className="slider__item">
+                <img className='slider__item-image' src={image2} alt="" />
+                <h3 className='slider__item-title' >Металлическая <br />дверь в подарок!</h3>
+                <p className='slider__item-text'> Рыбатекст используется дизайнерами,<br />
+                  проектировщиками и фронтендерами,<br />
+                  когда нужно выстро заполнить макеты<br />
+                  или прототипы содержимым.</p>
+                {/* <button>перейти к акции</button> */}
+                <img className='slider__item-discount' src={discount} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider__item">
+                <img className='slider__item-image' src={image2} alt="" />
+                <h3 className='slider__item-title' >Металлическая <br />дверь в подарок!</h3>
+                <p className='slider__item-text'> Рыбатекст используется дизайнерами,<br />
+                  проектировщиками и фронтендерами,<br />
+                  когда нужно выстро заполнить макеты<br />
+                  или прототипы содержимым.</p>
+                {/* <button>перейти к акции</button> */}
+                <img className='slider__item-discount' src={discount} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="slider__item">
+                <img className='slider__item-image' src={image2} alt="" />
+                <h3 className='slider__item-title' >Металлическая <br />дверь в подарок!</h3>
+                <p className='slider__item-text'> Рыбатекст используется дизайнерами,<br />
+                  проектировщиками и фронтендерами,<br />
+                  когда нужно выстро заполнить макеты<br />
+                  или прототипы содержимым.</p>
+                {/* <button>перейти к акции</button> */}
+                <img className='slider__item-discount' src={discount} alt="" />
+              </div>
+            </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__item">
+                  <img className='slider__item-image' src={image2} alt="" />
+                  <h3 className='slider__item-title' >Металлическая <br />дверь в подарок!</h3>
+                  <p className='slider__item-text'> Рыбатекст используется дизайнерами,<br />
+                    проектировщиками и фронтендерами,<br />
+                    когда нужно выстро заполнить макеты<br />
+                    или прототипы содержимым.</p>
+                  {/* <button>перейти к акции</button> */}
+                  <img className='slider__item-discount' src={discount} alt="" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="slider__item">
+                  <img className='slider__item-image' src={image2} alt="" />
+                  <h3 className='slider__item-title' >Металлическая <br />дверь в подарок!</h3>
+                  <p className='slider__item-text'> Рыбатекст используется дизайнерами,<br />
+                    проектировщиками и фронтендерами,<br />
+                    когда нужно выстро заполнить макеты<br />
+                    или прототипы содержимым.</p>
+                  {/* <button>перейти к акции</button> */}
+                  <img className='slider__item-discount' src={discount} alt="" />
+                </div>
+              </SwiperSlide>
           </Swiper>
         </div>
         {/* <img src={vector} className='slider__vector' alt="" /> */}

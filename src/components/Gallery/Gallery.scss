@@ -31,6 +31,7 @@
             }
 
             .gallery__item-title {
+                width: 135px;
                 position: relative;
                 font-family: Gilroy;
                 z-index: 1;
@@ -78,29 +79,29 @@
                 top: 115px;
                 left: 204px;
             }
-            .gallery__item-text-big {
-                top: 225px;
-                left: 44px;
-                span {
-                    color: #FFF;
-                    font-size: 29.257px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 29.257px; /* 100% */
-                }
-            }
-            .gallery__item-title-big {
-                position: relative;
-                font-family: Gilroy;
-                z-index: 1;
-                color: #FFF;
-                font-size: 29.257px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 29.257px;
-                margin-top: 45px;
-                margin-left: 44px;
-            }
+            // .gallery__item-text-big {
+            //     top: 225px;
+            //     left: 44px;
+            //     span {
+            //         color: #FFF;
+            //         font-size: 29.257px;
+            //         font-style: normal;
+            //         font-weight: 700;
+            //         line-height: 29.257px; /* 100% */
+            //     }
+            // }
+            // .gallery__item-title-big {
+            //     position: relative;
+            //     font-family: Gilroy;
+            //     z-index: 1;
+            //     color: #FFF;
+            //     font-size: 29.257px;
+            //     font-style: normal;
+            //     font-weight: 700;
+            //     line-height: 29.257px;
+            //     margin-top: 45px;
+            //     margin-left: 44px;
+            // }
             .gallery__item-btn {
                 margin-top: 26px;
                 margin-left: 40px;
@@ -117,22 +118,87 @@
                 line-height: 11.937px;
                 text-transform: uppercase;
             }
-            .gallery__item-btn-big {
-                margin-left: 44px;
-                margin-top: 162px;
-            }
+            // .gallery__item-btn-big {
+            //     margin-left: 44px;
+            //     margin-top: 162px;
+            // }
         }
 
-        .gallery__item-big1 {
+        .gallery__item:nth-child(1) {
             grid-row-start: 1;
             grid-row-end: 3;
+            .gallery__item-text {
+                top: 225px;
+                left: 44px;
+                span {
+                    color: #FFF;
+                    font-size: 29.257px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 29.257px; /* 100% */
+                }
+            }
+            .gallery__item-title {
+                position: relative;
+                font-family: Gilroy;
+                z-index: 1;
+                color: #FFF;
+                font-size: 29.257px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 29.257px;
+                margin-top: 45px;
+                margin-left: 44px;
+            }
+            .gallery__item-btn {
+                margin-left: 44px;
+                margin-top: 192px;
+            }
         }
-
-        .gallery__item-big2 {
+        .gallery__item:nth-child(6) {
             grid-row-start: 2;
             grid-row-end: 4;
             grid-column-start: 3;
             grid-column-end: 4;
+            .gallery__item-text {
+                top: 225px;
+                left: 44px;
+                span {
+                    color: #FFF;
+                    font-size: 29.257px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 29.257px; /* 100% */
+                }
+            }
+            .gallery__item-title {
+                position: relative;
+                font-family: Gilroy;
+                z-index: 1;
+                color: #FFF;
+                font-size: 29.257px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 29.257px;
+                margin-top: 45px;
+                margin-left: 44px;
+            }
+            .gallery__item-btn {
+                margin-left: 44px;
+                margin-top: 192px;
+            }
         }
+
+        // .gallery__item-big1 {
+        //     grid-row-start: 1;
+        //     grid-row-end: 3;
+        // }
+
+        // .gallery__item-big2 {
+        //     grid-row-start: 2;
+        //     grid-row-end: 4;
+        //     grid-column-start: 3;
+        //     grid-column-end: 4;
+        // }
     }
 }

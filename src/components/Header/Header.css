@@ -210,3 +210,12 @@ text-transform: uppercase;
 .ImageIcon {
     margin-right: 10px;
 }
+
+.personal__area__image {
+    height: 50px;
+    position: relative;
+    /* width: ; */
+    margin-top: 26px;
+    border-radius: 50%;
+    z-index: 3;
+}

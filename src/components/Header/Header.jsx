@@ -6,15 +6,17 @@ import buttopnImage from '../../images/Header/Button-image.svg'
 import mail from '../../images/Header/mail.svg'
 import elipse from '../../images/Header/Ellipse 3.svg'
 import phoneLogo from '../../images/Header/PhoneLogo.svg'
+import personalArea from '../../images/Header/Личный кабинет.jpg'
 import './Header.css'
 import BackgraundBanner from '../BackgraundBanner/BackgraundBanner'
 import Navigation from '../Navigation/Navigation'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
-  const [darkTheme, setDarkTheme] = useState(false)
+
   return (
     <header>
-      <BackgraundBanner darkTheme={darkTheme}/>
+      <BackgraundBanner/>
       <div className="container">
       <div className="HeaderRow">
         <img src={logo} alt="Логотип" className="HeaderLogo" />
@@ -45,11 +47,7 @@ const Header = () => {
           <a href="tel:+78000000000">+7 (800) 000-00-00</a>
           <a href="#">Заказать обратный звонок</a>
         </div>
-        <button 
-        onClick={() => setDarkTheme(!darkTheme)}
-        className='thme'>
-          {darkTheme ? 'Тёмная тема' : 'Обычная'}
-        </button>
+        <Link to='/personalArea' ><img className='personal__area__image' src={personalArea} alt="" /></Link>
       </div>
       <Navigation/>
       </div>

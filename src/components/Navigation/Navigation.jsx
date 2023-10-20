@@ -19,7 +19,7 @@ const Navigation = () => {
           <Link to="/slider">акции</Link>
         </div>
         <div className="Link">
-          <Link to="/block2">калькулятор</Link>
+          <a href="">услуги</a>
           <img className='LinkImage' src={vector} alt="" />
         </div>
         <div className="Link">

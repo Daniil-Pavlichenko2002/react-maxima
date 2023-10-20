@@ -3,9 +3,11 @@ import './App.css';
 import Gallery from './components/Gallery/Gallery';
 import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
-import Block2 from './components/Block2/Block2';
-import { Route, RouterProvider, Routes, createBrowserRouter } from 'react-router-dom';
+import Calculator from './components/Calculator/Calculator';
+import { Route,  Routes, } from 'react-router-dom';
 import SwiperSlider from './components/SwiperSlider/SwiperSlider';
+import PersonalArea from './components/PersonalArea/PersonalArea';
+import Footer from './components/Footer/Footer';
 
 
 // const router = createBrowserRouter([
@@ -14,8 +16,8 @@ import SwiperSlider from './components/SwiperSlider/SwiperSlider';
 //     element: <Banner />,
 //   },
 //   {
-//     path: "/block2",
-//     element: <Block2/>,
+//     path: "/Calculator",
+//     element: <Calculator/>,
 //   },
 //   {
 //     path: "/",
@@ -35,18 +37,20 @@ function App() {
         <div className='container'>
           <Routes>
             <Route path='/' element={<Banner />}/>
-            <Route path='/block2' element={<Block2 />}/>
+            <Route path='/calculator' element={<Calculator />}/>
             <Route path='/gallery' element={<Gallery />}/>
             <Route path='/slider' element={<SwiperSlider />}/>
+            <Route path='/personalArea' element={<PersonalArea />}/>
           </Routes>
 
           {/* <Banner />
-          <Block2 slide={slide} index={index} setIndex={setIndex} /> При подключении Link ошибка
+          <Calculator slide={slide} index={index} setIndex={setIndex} /> При подключении Link ошибка
           <Gallery />
           <Slider /> */}
           {/* <RouterProvider router={router} /> */}
         </div>
       </main>
+      <Footer/>
     </div>
   );
 }

@@ -1,0 +1,32 @@
+footer {
+    background: #373739;
+    margin-top: 60px;
+    z-index: 4;
+    position: relative;
+    height: 160px;
+    // height: 100px;
+    padding: 8px 82px 32px 82px; 
+    .footer__row {
+        display: flex;
+        justify-content: space-between;
+        padding: 57px 10px 0 10px;
+        p {
+            color: #FFF;
+            font-family: Gilroy;
+            font-size: 15.206px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        a {
+            color: #E5B53E;
+            font-family: Gilroy;
+            font-size: 15.206px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-decoration-line: underline;
+        }
+    }
+}
