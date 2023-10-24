@@ -1,15 +1,10 @@
-.swiper-button-prev {
-  display: none !important;
-}
 .swiper-button-prev:after, .swiper-button-next:after {
   font-size: 18px !important;
 }
 .swiper {
   width: 100%;
   height: 100%;
-  // overflow: auto;
   position: static;
-
 }
 
 .swiper-slide {
@@ -27,7 +22,7 @@
 }
 
 .slider {
-  margin-top: 122px;
+  margin-top: 680px;
   position: relative;
 
   .slider__title {
@@ -45,7 +40,6 @@
       font-size: 47px;
       font-weight: 700;
       line-height: 47.04px;
-      /* 100.085% */
     }
   }
 
@@ -73,7 +67,6 @@
         font-style: normal;
         font-weight: 600;
         line-height: 26.452px;
-        /* 97.969% */
       }
 
       .slider__item-text {
@@ -120,9 +113,17 @@ height: 78.268px;
 
   .swiper-button-next {
     position: absolute;
-    // left: 1120px;
     top: 242px;
     right: -25px;
+    width: 9.939px;
+height: 18.635px;
+stroke-width: 1.242px;
+color: #323338;
+  }
+  .swiper-button-prev {
+    position: absolute;
+    top: 242px;
+    left: -25px;
     width: 9.939px;
 height: 18.635px;
 stroke-width: 1.242px;
@@ -140,7 +141,9 @@ color: #323338;
     width: 93px;
   }
 }
-
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  display: none;
+}
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
   position: absolute;
   top: 400px;

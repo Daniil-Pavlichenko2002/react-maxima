@@ -1,13 +1,7 @@
-
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import image from '../../images/Main/image 6.png'
 import image2 from '../../images/Main/image 7.png'
 import discount from '../../images/Main/Discount.svg'
-import vector from '../../images/Main/Vector 57.svg'
-import group from '../../images/Main/Group 40.svg'
-// import image from '../../images/Main/gallery/Rectangle 45.png'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -17,7 +11,7 @@ import 'swiper/css/navigation';
 import './SwiperSlider.scss';
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Mousewheel, Keyboard} from 'swiper/modules';
 
 export default function SwiperSlider() {
   return (
@@ -27,14 +21,16 @@ export default function SwiperSlider() {
         <div className="slider__items">
 
           <Swiper
-            slidesPerView={2}
-            spaceBetween={30}
-            loop={true}
             pagination={{
               clickable: true,
             }}
+            slidesPerView={2}
+            spaceBetween={30}
+            cssMode={true}
             navigation={true}
-            modules={[Pagination, Navigation]}
+            mousewheel={true}
+            keyboard={true}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
             className="mySwiper"
           >
             <SwiperSlide>
@@ -134,10 +130,6 @@ export default function SwiperSlider() {
               </SwiperSlide>
           </Swiper>
         </div>
-        {/* <img src={vector} className='slider__vector' alt="" /> */}
-        {/* <div className="slider__block_image">
-          <img src={group} className='slider__group' alt="" />
-        </div> */}
       </section>
     </>
   );

@@ -11,7 +11,6 @@ export const counterSlice = createSlice({
   reducers: {
     addProject: (state, action) => {
         const findItem = state.items.find(obj => obj.id === action.payload.id)
-        console.log(findItem)
         if(!findItem) {
             state.items.push(action.payload)
         } 

@@ -48,7 +48,6 @@ export const slide = [
     },
 ]
     
-// вывести в prices в отдельную переменную
 const initialState = {
     index: 0,
     prices: [],
@@ -70,11 +69,7 @@ export const counterSlice = createSlice({
     },
     minusSlide: (state) => {
         state.prices.pop()
-        // state.check1 = false;
-        // state.check2 = false; 
-        // console.log(state.prices.length === slide.length - 1)
         if (state.prices.length === slide.length - 1) {
-            // console.log('prices: ', state.prices.length, 'slide: ', slide.length - 1 )
             state.index = state.prices.length
             return
         }
@@ -89,7 +84,6 @@ export const counterSlice = createSlice({
         }
         state.check1 = true;
         state.check2 = false;
-        // state.prices = [...state.prices, action.payload]
     },
     setCheck2: (state) => {
         if (state.prices.length - 1 === state.index) {
@@ -97,22 +91,11 @@ export const counterSlice = createSlice({
         }
         state.check1 = false;
         state.check2 = true;
-        // state.prices  = [...state.prices, action.payload]
     },
     setPrice1: (state, action) => {
-        // if (state.prices.length - 1 === state.index) {
-        //     state.prices.pop() 
-        // }
-        // state.check1 = true;
-        // state.check2 = false;
         state.prices = [...state.prices, action.payload]
     },
     setPrice2: (state, action) => {
-        // if (state.prices.length - 1 === state.index) {
-        //     state.prices.pop() 
-        // }
-        // state.check1 = false;
-        // state.check2 = true;
         state.prices  = [...state.prices, action.payload]
     },
     setFinalChecks: (state) => {

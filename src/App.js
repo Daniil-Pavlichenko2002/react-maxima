@@ -1,4 +1,3 @@
-import Slider from './components/Slider/Slider'
 import './App.css';
 import Gallery from './components/Gallery/Gallery';
 import Header from './components/Header/Header';
@@ -8,26 +7,6 @@ import { Route,  Routes, } from 'react-router-dom';
 import SwiperSlider from './components/SwiperSlider/SwiperSlider';
 import PersonalArea from './components/PersonalArea/PersonalArea';
 import Footer from './components/Footer/Footer';
-
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Banner />,
-//   },
-//   {
-//     path: "/Calculator",
-//     element: <Calculator/>,
-//   },
-//   {
-//     path: "/",
-//     element: <Gallery />,
-//   },
-//   {
-//     path: "/slider",
-//     element: <Slider />,
-//   },
-// ]);
 
 function App() {
   return (

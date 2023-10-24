@@ -19,24 +19,24 @@ const Navigation = () => {
           <Link to="/slider">акции</Link>
         </div>
         <div className="Link">
-          <a href="">услуги</a>
+          <a href="#">услуги</a>
           <img className='LinkImage' src={vector} alt="" />
         </div>
         <div className="Link">
-          <a href="">заказчику</a>
+          <a href="#">заказчику</a>
           <img className='LinkImage' src={vector} alt="" />
         </div>
         <div className="Link">
-          <a href="">контакты</a>
+          <a href="#">контакты</a>
           <img className='LinkImage' src={vector} alt="" />
         </div>
         <div className="Link">
           <img src={heart} className='ImageIcon' alt="" />
-          <a href="">избранное</a>
+          <a href="#">избранное</a>
         </div>
         <div className="Link">
           <img className='ImageIcon' src={search} alt="" />
-          <a href="">поиск</a>
+          <a href="#">поиск</a>
         </div>
       </nav>
   )
